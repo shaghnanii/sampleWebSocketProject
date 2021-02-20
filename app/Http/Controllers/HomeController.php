@@ -32,7 +32,7 @@ class HomeController extends Controller
     public function broadcast()
     {
         // broadcast(new Hello());
-        Auth::user()->notify(new RealTimeNotification("Here is a new Notification "));
+        Auth::user()->notify(new RealTimeNotification("A Notification from the Controller"));
     }
 
     public function listener()
